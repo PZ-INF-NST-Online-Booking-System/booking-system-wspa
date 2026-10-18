@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" font-family="Segoe UI, Arial, sans-serif" font-size="15">
+  <title>EKR-04 Nowa rezerwacja – makieta low-fi (stan: kolizja terminu)</title>
+  <style>
+    .box { fill: #ffffff; stroke: #555555; stroke-width: 1.5; }
+    .field { fill: #ffffff; stroke: #888888; stroke-width: 1.2; }
+    .muted { fill: #777777; }
+    .label { fill: #333333; font-weight: 600; }
+    .text { fill: #333333; }
+    .note { fill: #1f5fa8; font-size: 13px; }
+    .marker { fill: #1f5fa8; }
+    .marker-text { fill: #ffffff; font-size: 13px; font-weight: 700; }
+  </style>
+
+  <!-- tło i okno przeglądarki -->
+  <rect x="0" y="0" width="960" height="640" fill="#f4f4f4"/>
+  <rect class="box" x="20" y="20" width="640" height="600" rx="6"/>
+  <rect x="20" y="20" width="640" height="36" rx="6" fill="#e2e2e2" stroke="#555555" stroke-width="1.5"/>
+  <circle cx="40" cy="38" r="5" fill="#bbbbbb"/>
+  <circle cx="56" cy="38" r="5" fill="#bbbbbb"/>
+  <circle cx="72" cy="38" r="5" fill="#bbbbbb"/>
+  <rect class="field" x="92" y="28" width="420" height="20" rx="10"/>
+  <text class="muted" x="104" y="43" font-size="12">https://rezerwacje.example/rezerwacje/nowa</text>
+
+  <!-- pasek nawigacji -->
+  <rect x="21" y="57" width="638" height="44" fill="#d6d6d6"/>
+  <text class="label" x="40" y="85">System rezerwacji</text>
+  <text class="text" x="250" y="85">Pulpit</text>
+  <text class="text" x="320" y="85">Zasoby</text>
+  <text class="text" x="396" y="85" font-weight="700" text-decoration="underline">Moje rezerwacje</text>
+  <text class="text" x="560" y="85">Jan K. ▾</text>
+
+  <!-- nagłówek -->
+  <text class="text" x="44" y="138" font-size="22" font-weight="700">Nowa rezerwacja</text>
+  <text class="muted" x="44" y="160" font-size="13">Pulpit › Moje rezerwacje › Nowa rezerwacja</text>
+
+  <!-- baner kolizji (stan błędu, US-01 scenariusz 2) -->
+  <rect x="44" y="176" width="592" height="64" rx="4" fill="#fbe3e3" stroke="#b42318" stroke-width="1.5"/>
+  <text x="60" y="200" fill="#b42318" font-weight="700">⚠ Sala 2.14 jest zajęta 12.11 w godz. 11:00–13:00.</text>
+  <text x="60" y="224" fill="#7a1a12">Najbliższy wolny termin: 12.11, 13:00–15:00.</text>
+  <rect x="480" y="208" width="140" height="24" rx="4" fill="#ffffff" stroke="#b42318"/>
+  <text x="494" y="225" fill="#b42318" font-size="13">Wybierz ten termin</text>
+
+  <!-- formularz -->
+  <text class="label" x="44" y="276">Zasób *</text>
+  <rect class="field" x="44" y="284" width="592" height="36" rx="4"/>
+  <text class="text" x="56" y="307">Sala 2.14 (laboratorium, 24 miejsca)</text>
+  <text class="muted" x="610" y="307">▾</text>
+
+  <text class="label" x="44" y="352">Data *</text>
+  <rect class="field" x="44" y="360" width="180" height="36" rx="4"/>
+  <text class="text" x="56" y="383">12.11.2026</text>
+  <text class="muted" x="198" y="383">▦</text>
+
+  <text class="label" x="252" y="352">Od *</text>
+  <rect x="252" y="360" width="120" height="36" rx="4" fill="#ffffff" stroke="#b42318" stroke-width="1.5"/>
+  <text class="text" x="264" y="383">10:00</text>
+
+  <text class="label" x="396" y="352">Do *</text>
+  <rect x="396" y="360" width="120" height="36" rx="4" fill="#ffffff" stroke="#b42318" stroke-width="1.5"/>
+  <text class="text" x="408" y="383">12:00</text>
+  <text x="252" y="414" fill="#b42318" font-size="13">Termin koliduje z istniejącą rezerwacją.</text>
+
+  <text class="label" x="44" y="448">Cel rezerwacji</text>
+  <rect class="field" x="44" y="456" width="592" height="64" rx="4"/>
+  <text class="muted" x="56" y="480">np. zajęcia laboratoryjne z baz danych</text>
+
+  <!-- przyciski -->
+  <rect x="44" y="548" width="140" height="40" rx="4" fill="#c8c8c8"/>
+  <text x="70" y="573" fill="#777777" font-weight="700">Zarezerwuj</text>
+  <rect x="200" y="548" width="110" height="40" rx="4" fill="#ffffff" stroke="#555555"/>
+  <text class="text" x="228" y="573">Anuluj</text>
+  <text class="muted" x="330" y="573" font-size="13">* pole wymagane</text>
+
+  <!-- znaczniki adnotacji -->
+  <circle class="marker" cx="648" cy="186" r="11"/><text class="marker-text" x="644" y="191">1</text>
+  <circle class="marker" cx="234" cy="372" r="11"/><text class="marker-text" x="230" y="377">2</text>
+  <circle class="marker" cx="44" cy="548" r="11"/><text class="marker-text" x="40" y="553">3</text>
+
+  <!-- legenda adnotacji -->
+  <text class="label" x="680" y="40" font-size="14">Adnotacje</text>
+  <circle class="marker" cx="692" cy="68" r="10"/><text class="marker-text" x="688" y="73">1</text>
+  <text class="note" x="710" y="66">Baner kolizji z propozycją</text>
+  <text class="note" x="710" y="82">wolnego terminu (US-01, sc. 2)</text>
+  <circle class="marker" cx="692" cy="114" r="10"/><text class="marker-text" x="688" y="119">2</text>
+  <text class="note" x="710" y="112">Data: kalendarz blokuje daty</text>
+  <text class="note" x="710" y="128">z przeszłości (RB-02)</text>
+  <circle class="marker" cx="692" cy="160" r="10"/><text class="marker-text" x="688" y="165">3</text>
+  <text class="note" x="710" y="158">„Zarezerwuj” nieaktywny, dopóki</text>
+  <text class="note" x="710" y="174">termin nie jest poprawny i wolny</text>
+
+  <text class="muted" x="680" y="600" font-size="12">Makieta low-fi · EKR-04</text>
+  <text class="muted" x="680" y="616" font-size="12">stan: kolizja terminu</text>
+</svg>
