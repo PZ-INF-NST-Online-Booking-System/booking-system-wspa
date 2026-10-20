@@ -1,1 +1,8 @@
+# System
 .DS_Store
+
+# Materiały dydaktyczne prowadzącego (nie wchodzą do repozytorium zespołu)
+projekt_wspa/
+
+# Robocze pliki asystenta AI
+.claude/
