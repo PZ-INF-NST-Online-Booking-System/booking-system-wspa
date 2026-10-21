@@ -1,43 +1,65 @@
 # Online Booking System
 
 > Projekt zespołowy systemu informatycznego, cz. 1 (dokumentacja), semestr zimowy 2026/27, studia niestacjonarne.
-> Temat nr **[XX]**: [tytuł tematu z listy]
+> Temat nr **07**: Gabinet usług (fryzjer / kosmetyczka): rezerwacje wizyt
 
 ## O systemie
 
-[2–4 zdania: jaki problem rozwiązuje system, dla kogo jest i jaka jest jego główna wartość.]
+System obsługuje zapisy na wizyty u usługodawcy pracującego na terminy — gabinetu, salonu lub konsultanta z obsadą od jednej do kilku osób, w jednej, lub kilku lokalizacjach. Klient wybiera lokalizację/gabinet, usługę, pracownika i wolny termin na publicznej stronie rezerwacji, bez zakładania konta i o dowolnej porze, a system pokazuje wyłącznie terminy faktycznie dostępne, wyklucza kolizje i wysyła potwierdzenie oraz przypomnienie e-mailem. Administrator prowadzi katalog usług, katalog placówek, grafiki pracowników i kartotekę klientów w jednym miejscu, zamiast kalendarza papierowego i zapisów przyjmowanych telefonicznie.
+
+Zakres MVP i świadome wyłączenia opisuje [Wizja i zakres](docs/01_wizja_i_zakres.md#15-zakres-systemu).
 
 ## Zespół
 
-| Osoba         | Login GitHub/GitLab | Rola główna               | Role dodatkowe |
-| ------------- | ------------------- | ------------------------- | -------------- |
-| Imię Nazwisko | @login              | Kierownik projektu        |                |
-| Imię Nazwisko | @login              | Analityk wymagań          |                |
-| Imię Nazwisko | @login              | Architekt / projektant BD |                |
-| Imię Nazwisko | @login              | Projektant UX/UI          |                |
-| Imię Nazwisko | @login              | QA / wdrożenie            |                |
+| Osoba         | Login GitHub/GitLab | Rola główna               | Role dodatkowe                    |
+| ------------- | ------------------- | ------------------------- | --------------------------------- |
+| Hubert Pulik  | @hubertPulik        | Kierownik projektu        | Projektant UX/UI, wdrożenie       |
+| Imię Nazwisko | @login              | Analityk wymagań          |                                   |
+| Imię Nazwisko | @login              | Architekt / projektant BD | Inżynier jakości (testy, macierz) |
+
+Zespół liczy trzy osoby, więc role trzeba łączyć. Zamiast schematu proponowanego dla trzyosobowych zespołów przyjęliśmy podział według doświadczenia: kierownik projektu ma na koncie projektowanie makiet i prototypów oraz wdrożenia produkcyjne, dlatego bierze dodatkowo projektowanie UX/UI i model wdrożenia. Architekt przejmuje testy i macierz śledzenia, bo obie rzeczy opierają się na modelu danych i liście endpointów, które sam projektuje. Analityk prowadzi wymagania w całości i bez obciążenia dodatkową rolą — to najcięższy pojedynczy obszar dokumentacji.
+
+Podział rozkłada też skupiska pracy na kolejne kamienie: M1 i M4 obciążają kierownika projektu, M2 analityka, M3 architekta. Historyjki użytkownika pisze analityk, a przypadki testowe do nich — architekt, więc kryteria akceptacji weryfikuje ktoś inny niż ich autor.
+
+Po dołączeniu czwartej osoby wydzielamy rolę inżyniera jakości (testy, wdrożenie, macierz śledzenia); po piątej — procesy i przypadki użycia przechodzą do drugiego analityka.
 
 ### Macierz odpowiedzialności (RACI)
 
-[Wklejcie i uzupełnijcie tabelę RACI z pliku „role_w_zespole.md”.]
+R = wykonuje, A = odpowiada (tylko jedna osoba), C = konsultowany, I = informowany
+
+| Sekcja dokumentacji      | PM + UX/UI + wdrożenie | Analityk | Architekt / BD + testy |
+| ------------------------ | ---------------------- | -------- | ---------------------- |
+| 00 Zarządzanie projektem | A                      | C        | C                      |
+| 01 Wizja i zakres        | A                      | R        | C                      |
+| 02 Słownik               | C                      | A        | R                      |
+| 03 Wymagania             | R                      | A        | R                      |
+| 04 Procesy i UC          | C                      | A        | R                      |
+| 05 Architektura          | C                      | C        | A                      |
+| 06 Model danych          | I                      | C        | A                      |
+| 07 Interfejs użytkownika | A                      | R        | C                      |
+| 08 Bezpieczeństwo        | C                      | C        | A                      |
+| 09 Wdrożenie             | A                      | I        | C                      |
+| 10 Testy                 | C                      | R        | A                      |
+| 11 Plan realizacji       | A                      | C        | R                      |
+| Macierz śledzenia        | C                      | R        | A                      |
 
 ## Dokumentacja
 
 | Nr  | Dokument                                                                             | Właściciel | Status |
 | --- | ------------------------------------------------------------------------------------ | ---------- | ------ |
-| 00  | [Zarządzanie projektem](docs/00_zarzadzanie.md)                                      |            | ⬜     |
-| 01  | [Wizja i zakres](docs/01_wizja_i_zakres.md)                                          |            | ⬜     |
-| 02  | [Słownik pojęć](docs/02_slownik.md)                                                  |            | ⬜     |
-| 03  | [Wymagania](docs/03_wymagania.md)                                                    |            | ⬜     |
-| 04  | [Procesy i przypadki użycia](docs/04_procesy_i_przypadki_uzycia.md)                  |            | ⬜     |
-| 05  | [Architektura](docs/05_architektura.md) + [ADR](docs/adr/)                           |            | ⬜     |
-| 06  | [Model danych](docs/06_model_danych.md)                                              |            | ⬜     |
-| 07  | [Interfejs użytkownika](docs/07_interfejs_uzytkownika.md) + [makiety](docs/makiety/) |            | ⬜     |
-| 08  | [Bezpieczeństwo](docs/08_bezpieczenstwo.md)                                          |            | ⬜     |
-| 09  | [Wdrożenie](docs/09_wdrozenie.md)                                                    |            | ⬜     |
-| 10  | [Testy i jakość](docs/10_testy_i_jakosc.md)                                          |            | ⬜     |
-| 11  | [Plan realizacji cz. 2](docs/11_plan_realizacji.md)                                  |            | ⬜     |
-| —   | [Macierz śledzenia wymagań](docs/macierz_sledzenia.md)                               |            | ⬜     |
+| 00  | [Zarządzanie projektem](docs/00_zarzadzanie.md)                                      | PM         | 🟨     |
+| 01  | [Wizja i zakres](docs/01_wizja_i_zakres.md)                                          | PM         | 🟨     |
+| 02  | [Słownik pojęć](docs/02_slownik.md)                                                  | Analityk   | ⬜     |
+| 03  | [Wymagania](docs/03_wymagania.md)                                                    | Analityk   | ⬜     |
+| 04  | [Procesy i przypadki użycia](docs/04_procesy_i_przypadki_uzycia.md)                  | Analityk   | ⬜     |
+| 05  | [Architektura](docs/05_architektura.md) + [ADR](docs/adr/)                           | Architekt  | ⬜     |
+| 06  | [Model danych](docs/06_model_danych.md)                                              | Architekt  | ⬜     |
+| 07  | [Interfejs użytkownika](docs/07_interfejs_uzytkownika.md) + [makiety](docs/makiety/) | PM         | ⬜     |
+| 08  | [Bezpieczeństwo](docs/08_bezpieczenstwo.md)                                          | Architekt  | ⬜     |
+| 09  | [Wdrożenie](docs/09_wdrozenie.md)                                                    | PM         | ⬜     |
+| 10  | [Testy i jakość](docs/10_testy_i_jakosc.md)                                          | Architekt  | ⬜     |
+| 11  | [Plan realizacji cz. 2](docs/11_plan_realizacji.md)                                  | PM         | ⬜     |
+| —   | [Macierz śledzenia wymagań](docs/macierz_sledzenia.md)                               | Architekt  | ⬜     |
 
 Statusy: ⬜ nie rozpoczęto · 🟨 w trakcie · 🟩 gotowe do recenzji · ✅ zatwierdzone
 
