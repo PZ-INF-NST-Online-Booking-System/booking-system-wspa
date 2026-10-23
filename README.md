@@ -15,7 +15,7 @@ Zakres MVP i świadome wyłączenia opisuje [Wizja i zakres](docs/01_wizja_i_zak
 | ------------- | ------------------- | ------------------------- | --------------------------------- |
 | Hubert Pulik  | @hubertPulik        | Kierownik projektu        | Projektant UX/UI, wdrożenie       |
 | Imię Nazwisko | @login              | Analityk wymagań          |                                   |
-| Imię Nazwisko | @login              | Architekt / projektant BD | Inżynier jakości (testy, macierz) |
+| Hanna Yablonska | @hanna-yablonska              | Architekt / projektant BD | Inżynier jakości (testy, macierz) |
 
 Zespół liczy trzy osoby, więc role trzeba łączyć. Zamiast schematu proponowanego dla trzyosobowych zespołów przyjęliśmy podział według doświadczenia: kierownik projektu ma na koncie projektowanie makiet i prototypów oraz wdrożenia produkcyjne, dlatego bierze dodatkowo projektowanie UX/UI i model wdrożenia. Architekt przejmuje testy i macierz śledzenia, bo obie rzeczy opierają się na modelu danych i liście endpointów, które sam projektuje. Analityk prowadzi wymagania w całości i bez obciążenia dodatkową rolą — to najcięższy pojedynczy obszar dokumentacji.
 
