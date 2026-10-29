@@ -2,7 +2,7 @@
 
 ## Sposób pracy zespołu
 
-- Kanał komunikacji: FB Messenger + Google Meets
+- Kanał komunikacji: Serwer Discord + Google Meets
 - Stałe spotkanie zespołu: środa, 11.00
 - Tablica zadań: [https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1](https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1)
 - Zasada pracy: każde zadanie to Issue z osobą przypisaną i etykietą kamienia (`m1`…`m4`); zmiany wchodzą do `main` wyłącznie przez PR zatwierdzony przez inną osobę ([CONTRIBUTING.md](../CONTRIBUTING.md))
