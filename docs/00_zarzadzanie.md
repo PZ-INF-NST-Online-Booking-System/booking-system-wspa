@@ -2,9 +2,9 @@
 
 ## Sposób pracy zespołu
 
-- Kanał komunikacji: [np. Discord / Teams / Signal]
-- Stałe spotkanie zespołu: [dzień, godzina, forma]
-- Tablica zadań: [link do GitHub Projects]
+- Kanał komunikacji: Serwer Discord + Google Meets
+- Stałe spotkanie zespołu: środa, 11.00
+- Tablica zadań: [https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1](https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1)
 - Zasada pracy: każde zadanie to Issue z osobą przypisaną i etykietą kamienia (`m1`…`m4`); zmiany wchodzą do `main` wyłącznie przez PR zatwierdzony przez inną osobę ([CONTRIBUTING.md](../CONTRIBUTING.md))
 - Przegląd tablicy: raz w tygodniu na spotkaniu zespołu — stan zadań, obciążenie osób, aktualizacja rejestru ryzyk
 - Notatki ze spotkań: [`spotkania/`](spotkania/), jeden plik na spotkanie: `RRRR-MM-DD-krotki-opis.md`, np. `2026-11-14-wywiad-z-klientem.md` (uczestnicy, ustalenia, zadania z linkami do Issues)
@@ -41,7 +41,8 @@
 
 | Data           | Decyzja                                                                                                                                                                                                                                                           | Kto podjął                 |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-| [data zajęć 1] | Temat projektu: [nr i tytuł]. [Temat własny — zgoda prowadzącego z dnia …]                                                                                                                                                                                        | zespół, zgoda prowadzącego |
-| [data zajęć 1] | Podział rol przy trzech osobach według doświadczenia, a nie według schematu z materiałów: PM + UX/UI + wdrożenie, Analityk, Architekt/BD + testy i macierz śledzenia (uzasadnienie w [README](../README.md#zespół))                                               | zespół                     |
 | 2026-10-20     | Zakres MVP ograniczony do systemu dla jednego usługodawcy; wielodostępność, personalizacja wyglądu, widget do osadzania, SMS i integracja z kalendarzem zewnętrznym poza zakresem (uzasadnienie w [01_wizja_i_zakres.md](01_wizja_i_zakres.md#15-zakres-systemu)) | zespół                     |
 | 2026-10-20     | Markdown jest jedynym źródłem dokumentacji; diagramy jako kod Mermaid                                                                                                                                                                                             | zespół                     |
+| 2026-10-22     | Temat projektu nr 07 z listy: „Gabinet usług (fryzjer / kosmetyczka): rezerwacje wizyt”. Dokumentację odtwarzamy na podstawie działającej aplikacji jednego z członków zespołu, dzięki czemu wymagania opieramy na rzeczywistych rozwiązaniach, a nie na założeniach.                                                                                                                                                                                        | zespół |
+| 2026-10-22     | Podział rol przy trzech osobach według doświadczenia, a nie według schematu z materiałów: PM + UX/UI + wdrożenie, Analityk, Architekt/BD + testy i macierz śledzenia (uzasadnienie w [README](../README.md#zespół))                                               | zespół                     |
+| 2026-10-29     | Obsługa wielu lokalizacji jednego usługodawcy pozostaje poza zakresem MVP; opis systemu w README doprecyzowany do jednej placówki, żeby zgadzał się z sekcją 1.5. | zespół |
