@@ -6,3 +6,10 @@ projekt_wspa/
 
 # Robocze pliki asystenta AI
 .claude/
+
+# Konfiguracja lokalnych narzędzi (Obsidian, VS Code)
+.obsidian/
+.vscode/
+
+# Notatki robocze zespołu i asystenta (nie wchodzą do repozytorium)
+_robocze/
