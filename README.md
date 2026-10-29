@@ -65,13 +65,13 @@ Statusy: ⬜ nie rozpoczęto · 🟨 w trakcie · 🟩 gotowe do recenzji · ✅
 
 ## Kamienie milowe
 
-| Tag    | Zawartość                                                                                                                                      | Termin | Oddano |
-| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ------ |
-| `m1`   | repozytorium i tablica zadań, zespół i RACI, wizja i zakres, interesariusze, rejestr ryzyk, wstępny słownik, ćwiczenie git, pytania do wywiadu |        |        |
-| `m2`   | słownik, wymagania WF/WNF z MoSCoW, reguły biznesowe, historyjki z kryteriami akceptacji, C4 kontekst, protokół wywiadu, aktualizacja zakresu  |        |        |
-| `m3`   | UC, procesy, model dziedziny, ERD, architektura, ADR, bezpieczeństwo                                                                           |        |        |
-| `m4`   | UI, wdrożenie, testy, plan realizacji, macierz śledzenia                                                                                       |        |        |
-| `v1.0` | wersja końcowa                                                                                                                                 |        |        |
+| Tag    | Zawartość                                                                                                                                     | Termin     | Oddano |
+| ------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------ |
+| `m1`   | repozytorium i tablica zadań, zespół i RACI,wizja i zakres, interesariusze, rejestr ryzyk, wstępny słownik, ćwiczenie git, pytania do wywiadu | 07.11.2026 |        |
+| `m2`   | słownik, wymagania WF/WNF z MoSCoW, reguły biznesowe, historyjki z kryteriami akceptacji, C4 kontekst, protokół wywiadu, aktualizacja zakresu | 06.12.2026 |        |
+| `m3`   | UC, procesy, model dziedziny, ERD, architektura, ADR, bezpieczeństwo                                                                          | 10.01.2027 |        |
+| `m4`   | UI, wdrożenie, testy, plan realizacji, macierz śledzenia                                                                                      | 31.01.2027 |        |
+| `v1.0` | wersja końcowa                                                                                                                                | 15.02.2027 |        |
 
 ## Konwencje
 
