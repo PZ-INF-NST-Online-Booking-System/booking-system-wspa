@@ -5,7 +5,7 @@
 
 ## O systemie
 
-System obsługuje zapisy na wizyty u usługodawcy pracującego na terminy — gabinetu, salonu lub konsultanta z obsadą od jednej do kilku osób, w jednej, lub kilku lokalizacjach. Klient wybiera lokalizację/gabinet, usługę, pracownika i wolny termin na publicznej stronie rezerwacji, bez zakładania konta i o dowolnej porze, a system pokazuje wyłącznie terminy faktycznie dostępne, wyklucza kolizje i wysyła potwierdzenie oraz przypomnienie e-mailem. Administrator prowadzi katalog usług, katalog placówek, grafiki pracowników i kartotekę klientów w jednym miejscu, zamiast kalendarza papierowego i zapisów przyjmowanych telefonicznie.
+System obsługuje zapisy na wizyty u usługodawcy pracującego na terminy — gabinetu, salonu lub konsultanta z obsadą od jednej do kilku osób. Klient wybiera usługę, pracownika i wolny termin na publicznej stronie rezerwacji, bez zakładania konta i o dowolnej porze, a system pokazuje wyłącznie terminy faktycznie dostępne, wyklucza kolizje i wysyła potwierdzenie oraz przypomnienie e-mailem. Administrator prowadzi katalog usług, grafiki pracowników i kartotekę klientów w jednym miejscu, zamiast kalendarza papierowego i zapisów przyjmowanych telefonicznie.
 
 Zakres MVP i świadome wyłączenia opisuje [Wizja i zakres](docs/01_wizja_i_zakres.md#15-zakres-systemu).
 
