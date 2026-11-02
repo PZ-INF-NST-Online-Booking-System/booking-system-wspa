@@ -76,14 +76,55 @@ Kolejność wynika z wpływu na cele biznesowe:
 
 ## 1.6. Kontekst i systemy zewnętrzne
 
-<!-- Z jakimi systemami zewnętrznymi system współpracuje (poczta e-mail, bramka płatności, mapy, logowanie przez Google…)? -->
+### 1.6.1. Serwer poczty elektronicznej
+
+**Cel wykorzystania:**  
+System rezerwacji korzysta z zewnętrznego serwera poczty elektronicznej, aby wysyłać klientom wiadomości dotyczące ich wizyt.
+
+**Zakres współpracy:**
+- wysyłanie potwierdzenia rezerwacji;
+- wysyłanie przypomnienia o zbliżającej się wizycie;
+- wysyłanie informacji o anulowaniu rezerwacji.
+
+**Przekazywane dane:**
+- adres e-mail klienta;
+- imię klienta, jeśli jest wykorzystywane w treści wiadomości;
+- data i godzina wizyty;
+- nazwa zarezerwowanej usługi;
+- imię pracownika, jeśli jest potrzebne w wiadomości;
+- informacja o statusie rezerwacji.
+
+System przekazuje tylko dane potrzebne do przygotowania i wysłania wiadomości.
+
+**Co się dzieje, gdy serwer poczty jest niedostępny?**
+
+Niedostępność serwera poczty nie blokuje utworzenia rezerwacji. Rezerwacja zostaje zapisana w systemie, a wiadomość, której nie udało się wysłać, zostaje oznaczona do ponownej wysyłki.
+
+Po przywróceniu dostępności serwera system powinien spróbować wysłać wiadomość ponownie.
+
+Jeśli wysyłka nadal się nie powiedzie, klient może nie otrzymać potwierdzenia lub przypomnienia na czas. Dlatego system powinien zapisywać status wysyłki wiadomości.
+
+**Ograniczenia:**
+- wysyłanie wiadomości wymaga dostępności zewnętrznej usługi pocztowej;
+- system nie może zagwarantować, że wiadomość dotrze do skrzynki odbiorczej klienta;
+- do konfiguracji poczty potrzebne są odpowiednie dane dostępowe.
+
+**Decyzja proponowana:**  
+Awaria serwera poczty nie powoduje utraty rezerwacji. System zapisuje rezerwację i umożliwia ponowną próbę wysłania wiadomości po przywróceniu dostępności usługi pocztowej.
 
 ## 1.7. Założenia i ograniczenia
 
 | Typ | Opis |
 |---|---|
-| Założenie | np. użytkownicy mają dostęp do Internetu i przeglądarki |
-| Ograniczenie | np. budżet: wyłącznie darmowe/otwarte technologie; realizacja w 1 semestr przez zespół N-osobowy |
+| Założenie | Klienci mają dostęp do urządzenia z przeglądarką internetową i potrafią samodzielnie wypełnić krótki formularz rezerwacji bez zakładania konta. |
+| Założenie | Usługodawca ma stały dostęp do Internetu, dzięki czemu może korzystać z panelu administracyjnego i zarządzać rezerwacjami oraz grafikami pracowników. |
+| Założenie | Usługodawca posiada adres e-mail, który może zostać wykorzystany do konfiguracji wysyłki wiadomości systemowych. |
+| Założenie | Usługodawca przekaże dane początkowe, takie jak lista usług, czas ich trwania, ceny, lista pracowników i ich godziny pracy, a następnie będzie odpowiadać za ich aktualizację. |
+| Ograniczenie | Projekt musi zostać zrealizowany w ciągu jednego semestru, równolegle z innymi zajęciami zespołu. |
+| Ograniczenie | Projekt realizuje trzyosobowy zespół bez komercyjnego doświadczenia, co ogranicza czas i możliwości realizacji bardziej złożonych funkcji. |
+| Ograniczenie | Podczas realizacji projektu można wykorzystywać wyłącznie darmowe lub otwarte technologie, bez konieczności ponoszenia opłat licencyjnych. |
+| Ograniczenie | System musi spełniać wymagania RODO dotyczące ochrony danych osobowych klientów i pracowników. |
+| Ograniczenie | Zakres MVP jest ograniczony do funkcji wymienionych w sekcji 1.5. Funkcje wskazane jako wyłączone z MVP nie będą realizowane w podstawowej wersji systemu. |
 
 ## 1.8. Rozwiązania konkurencyjne / analiza istniejących narzędzi
 
