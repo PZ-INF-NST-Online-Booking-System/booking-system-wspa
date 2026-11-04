@@ -6,7 +6,7 @@
 - Stałe spotkanie zespołu: środa, 11.00
 - Tablica zadań: [https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1](https://github.com/orgs/PZ-INF-NST-Online-Booking-System/projects/1)
 - Zasada pracy: każde zadanie to Issue z osobą przypisaną i etykietą kamienia (`m1`…`m4`); zmiany wchodzą do `main` wyłącznie przez PR zatwierdzony przez inną osobę ([CONTRIBUTING.md](../CONTRIBUTING.md))
-- Przegląd tablicy: raz w tygodniu na spotkaniu zespołu — stan zadań, obciążenie osób, aktualizacja rejestru ryzyk
+- Przegląd tablicy: raz w tygodniu na spotkaniu zespołu - stan zadań, obciążenie osób, aktualizacja rejestru ryzyk
 - Notatki ze spotkań: [`spotkania/`](spotkania/), jeden plik na spotkanie: `RRRR-MM-DD-krotki-opis.md`, np. `2026-11-14-wywiad-z-klientem.md` (uczestnicy, ustalenia, zadania z linkami do Issues)
 
 ## Harmonogram semestru
@@ -19,8 +19,8 @@
 | M2                | 06.12.2026 (48 h przed zajęciami 3)    | PM             | słownik, wymagania z priorytetami, reguły biznesowe, historyjki, C4 kontekst, protokół wywiadu            |
 | M3                | 10.01.2027 (48 h przed zajęciami 4)    | PM             | procesy i UC, model dziedziny, ERD, architektura, ADR, bezpieczeństwo                                     |
 | M4                | 31.01.2027 (14 dni przed zajęciami 5)  | PM             | UI i makiety, wdrożenie, testy, plan realizacji cz. 2, macierz śledzenia; po tej dacie recenzja krzyżowa  |
-| recenzja krzyżowa | 20.01.2027 — 7 dni przed zajęciami 5   | PM             | Issues z etykietą `recenzja` w repozytorium recenzowanego zespołu                                         |
-| v1.0              | 15.02.2027 — razcej już po zajęciach 5 | PM             | wersja końcowa po uwagach z recenzji krzyżowej                                                            |
+| recenzja krzyżowa | 20.01.2027 - 7 dni przed zajęciami 5   | PM             | Issues z etykietą `recenzja` w repozytorium recenzowanego zespołu                                         |
+| v1.0              | 15.02.2027 - razcej już po zajęciach 5 | PM             | wersja końcowa po uwagach z recenzji krzyżowej                                                            |
 
 ## Rejestr ryzyk
 
@@ -30,10 +30,10 @@
 | ------ | ------------------------------------------------------------------------------------------------- | --- | --- | --- | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------- |
 | RYZ-01 | Członek zespołu nie wywiązuje się z zadań                                                         | 2   | 3   | 6   | łagodzenie: cotygodniowy przegląd tablicy, wczesna eskalacja do prowadzącego                                                    | PM         | otwarte |
 | RYZ-02 | Zespół trzyosobowy obsadza pięć rol, osoby łączące dwie role są przeciążone                       | 2   | 2   | 4   | łagodzenie: przegląd obciążenia na spotkaniu tygodniowym; po dojściu czwartej osoby oddzielenie roli UX/UI                      | PM         | otwarte |
-| RYZ-03 | Część zespołu nie pracowała wcześniej z gitem i PR — opóźnienia, zmiany wprowadzane poza procesem | 3   | 2   | 6   | łagodzenie: ćwiczenie git w M1, edycja plików przez interfejs GitHuba, instrukcja krok po kroku, recenzja każdego PR przez PM   | PM         | otwarte |
-| RYZ-04 | Rozjazd nazewnictwa między dokumentami — to samo pojęcie pod dwiema nazwami                       | 3   | 2   | 6   | łagodzenie: słownik jako jedyne źródło nazw, punkt kontrolny w szablonie PR, macierz śledzenia prowadzona od M2                 | Analityk   | otwarte |
+| RYZ-03 | Część zespołu nie pracowała wcześniej z gitem i PR - opóźnienia, zmiany wprowadzane poza procesem | 3   | 2   | 6   | łagodzenie: ćwiczenie git w M1, edycja plików przez interfejs GitHuba, instrukcja krok po kroku, recenzja każdego PR przez PM   | PM         | otwarte |
+| RYZ-04 | Rozjazd nazewnictwa między dokumentami - to samo pojęcie pod dwiema nazwami                       | 3   | 2   | 6   | łagodzenie: słownik jako jedyne źródło nazw, punkt kontrolny w szablonie PR, macierz śledzenia prowadzona od M2                 | Analityk   | otwarte |
 | RYZ-05 | Zakres MVP okazuje się zbyt duży do implementacji w cz. 2                                         | 2   | 3   | 6   | łagodzenie: jawna lista wyłączeń w 1.5, ponowny przegląd zakresu po wywiadzie i przy M4                                         | PM         | otwarte |
-| RYZ-06 | Jeden wywiad z klientem o ograniczonym czasie — wymagania pozostają niedoprecyzowane              | 2   | 2   | 4   | łagodzenie: pytania przygotowane i uzgodnione przed zajęciami 2, jawna lista założeń do potwierdzenia, dopytywanie przez Issues | Analityk   | otwarte |
+| RYZ-06 | Jeden wywiad z klientem o ograniczonym czasie - wymagania pozostają niedoprecyzowane              | 2   | 2   | 4   | łagodzenie: pytania przygotowane i uzgodnione przed zajęciami 2, jawna lista założeń do potwierdzenia, dopytywanie przez Issues | Analityk   | otwarte |
 | RYZ-07 | Kumulacja pracy na kilka dni przed terminem kamienia                                              | 3   | 2   | 6   | łagodzenie: Issues z terminem tygodniowym, tag tworzony 48 h przed zajęciami, przegląd tablicy co tydzień                       | PM         | otwarte |
 | RYZ-08 | Opóźnienie recenzji krzyżowej po stronie drugiego zespołu                                         | 2   | 2   | 4   | akceptacja: M4 oddane 14 dni przed zajęciami 5, kontakt z zespołem recenzującym od razu po tagu `m4`                            | PM         | otwarte |
 
@@ -47,3 +47,7 @@
 | 2026-10-22     | Podział rol przy trzech osobach według doświadczenia, a nie według schematu z materiałów: PM + UX/UI + wdrożenie, Analityk, Architekt/BD + testy i macierz śledzenia (uzasadnienie w [README](../README.md#zespół))                                               | zespół                     |
 | 2026-10-29     | Obsługa wielu lokalizacji jednego usługodawcy pozostaje poza zakresem MVP; opis systemu w README doprecyzowany do jednej placówki, żeby zgadzał się z sekcją 1.5. | zespół |
 | 2026-11-04     | Niedostępność serwera poczty nie blokuje rezerwacji: rezerwacja zostaje zapisana, a wiadomość trafia do ponownej wysyłki wraz z zapisanym statusem (propozycja z sekcji [1.6](01_wizja_i_zakres.md#16-kontekst-i-systemy-zewnętrzne) zatwierdzona przy recenzji PR #21). | zespół |
+| 2026-11-04     | Konwencja zapisu w całej dokumentacji: zwykłe dywizy zamiast półpauz, bo półpauza czyta się jako ślad tekstu generowanego maszynowo. | zespół |
+| 2026-11-04     | Model danych projektujemy pod jednego usługodawcę, bez kluczy najemcy w tabelach; `Usługodawca` to tabela jednowierszowa na dane firmy i konfigurację. Wielodostępność odrzucona: dawałaby stałe kolumny w każdej tabeli, a izolacji danych, panelu operatora ani konfiguracji per usługodawca i tak nie zapewnia. Konsekwencje dla wdrożenia (jedna domena, jeden certyfikat, jedna konfiguracja poczty) i odrzucony wariant opisuje ADR w M3. | zespół |
+| 2026-11-04     | Angielska nazwa pojęcia Rezerwacja to `Booking`, nie `Reservation` z szablonu: zgodnie ze [słownikiem](02_slownik.md) i nazwą repozytorium. Obowiązuje w nazwach w kodzie w cz. 2. | zespół |
+| 2026-11-04     | Osoba na recepcji nie ma w MVP osobnej roli i korzysta z roli Administrator; węższy zakres jej uprawnień do potwierdzenia w wywiadzie z klientem (pytanie E2). | zespół |
