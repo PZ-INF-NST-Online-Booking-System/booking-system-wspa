@@ -26,42 +26,81 @@ Wartości docelowe i dane bazowe (obecny odsetek nieobecności, liczba telefonó
 
 | ID | Interesariusz | Opis / rola | Oczekiwania wobec systemu | Wpływ (W/Ś/N) | Zainteresowanie (W/Ś/N) |
 |---|---|---|---|---|---|
-| INT-01 | | | | | |
+| INT-01 | Właściciel firmy usługowej | Prowadzi firmę usługodawcy (gabinet, salon, konsultant), zatrudnia od jednej do kilku osób, sam też często wykonuje usługi; decyduje o zakupie systemu i za niego płaci | Mniej telefonów przerywających pracę, jeden grafik całego zespołu zamiast zeszytu, brak dwóch rezerwacji na ten sam termin, mniej nieobecności klientów, pełna kontrola nad katalogiem usług, grafikami i regułą anulowania | W | W |
+| INT-02 | Pracownik wykonujący usługi | Fryzjer, kosmetyczka lub inny specjalista, który przyjmuje klientów według własnego grafiku | Aktualny podgląd swoich rezerwacji na dziś i najbliższe dni, widoczne w grafiku nowe i anulowane rezerwacje bez dopytywania właściciela, rezerwacje wyłącznie w godzinach jego pracy i z przerwą między wizytami | Ś | W |
+| INT-03 | Klient | Osoba, która umawia się na usługę, zwykle co kilka tygodni | Zapis o dowolnej porze bez dzwonienia i bez zakładania konta, widoczne tylko naprawdę wolne terminy, potwierdzenie i przypomnienie e-mailem, możliwość samodzielnego anulowania rezerwacji | N | W |
+| INT-04 | Osoba na recepcji | W firmach z recepcją odbiera telefony od klientów; w mniejszych firmach tę pracę wykonuje właściciel | Szybkie sprawdzenie wolnych terminów w kalendarzu rezerwacji podczas rozmowy telefonicznej, podgląd kartoteki klientów, mniej telefonów dzięki publicznej stronie rezerwacji | Ś | W |
+| INT-05 | Prowadzący zajęcia (zamawiający system) | Na zajęciach 2 występuje w roli klienta zamawiającego system; ocenia dokumentację i akceptuje zakres | Dokumentacja kompletna i spójna, na podstawie której zespół w cz. 2 zaimplementuje system bez zgadywania; zakres MVP możliwy do zrealizowania w jeden semestr | W | Ś |
+| INT-06 | Prezes Urzędu Ochrony Danych Osobowych (UODO) | Organ nadzorczy, który kontroluje przetwarzanie danych osobowych klientów (imię, nazwisko, e-mail, telefon, historia rezerwacji) i pracowników (dane kont, grafiki) | Przetwarzanie danych zgodne z RODO: zgoda na przetwarzanie, zbieranie tylko niezbędnych danych, określony okres przechowywania, możliwość usunięcia danych klienta na jego żądanie | W | N |
+| INT-07 | Dostawca serwera poczty elektronicznej | Zewnętrzna usługa pocztowa (sekcja 1.6.1), przez którą system wysyła potwierdzenia, przypomnienia i informacje o anulowaniu | Wysyłka zgodna z regulaminem i limitami usługi, poprawnie skonfigurowane dane dostępowe, brak wiadomości oznaczanych jako spam | Ś | N |
+
+Interesariusze INT-05, INT-06 i INT-07 nie korzystają z systemu bezpośrednio. Pozostali są użytkownikami opisanymi w sekcji 1.4.
+
+### Mapa interesariuszy
+
+```mermaid
+quadrantChart
+    title Mapa interesariuszy
+    x-axis Niskie zainteresowanie --> Wysokie zainteresowanie
+    y-axis Niski wpływ --> Wysoki wpływ
+    quadrant-1 Zarządzać blisko
+    quadrant-2 Utrzymywać satysfakcję
+    quadrant-3 Monitorować
+    quadrant-4 Informować
+    INT-01 Właściciel: [0.9, 0.9]
+    INT-02 Pracownik: [0.8, 0.45]
+    INT-03 Klient: [0.9, 0.15]
+    INT-04 Recepcja: [0.7, 0.4]
+    INT-05 Prowadzący: [0.45, 0.85]
+    INT-06 UODO: [0.1, 0.75]
+    INT-07 Serwer poczty: [0.2, 0.35]
+```
+
+| Strategia | Interesariusze | Co to oznacza w projekcie |
+|---|---|---|
+| Zarządzać blisko | INT-01 | Konsultujemy z nim każdą decyzję o zakresie i regułach rezerwacji (wywiad na zajęciach 2). |
+| Utrzymywać satysfakcję | INT-05, INT-06 | Dokumentacja zgodna z wymaganiami przedmiotu; wymagania RODO opisane w `08_bezpieczenstwo`. |
+| Informować | INT-02, INT-03, INT-04 | Ich potrzeby zbieramy przez właściciela, a w cz. 2 sprawdzamy w testach akceptacyjnych. |
+| Monitorować | INT-07 | Sprawdzamy limity i warunki darmowego planu przy wyborze usługi; awaria serwera nie blokuje rezerwacji (sekcja 1.6.1, dziennik decyzji z 2026-11-04). |
 
 ## 1.4. Użytkownicy systemu (aktorzy)
 
 | Aktor | Kim jest | Jak często korzysta | Kompetencje cyfrowe |
 |---|---|---|---|
-| | | | |
+| Klient | Osoba umawiająca się na usługę (INT-03). Nie ma konta: rezerwuje na publicznej stronie rezerwacji, a anuluje linkiem z wiadomości e-mail. | Rzadko: raz na kilka tygodni, przy każdej kolejnej wizycie; za każdym razem kilka minut. | Zróżnicowane, od niskich do wysokich. Korzysta głównie z telefonu, często bez wcześniejszej znajomości strony, więc ścieżka rezerwacji musi być prosta i nie może wymagać instrukcji. |
+| Pracownik | Specjalista wykonujący usługi (INT-02). Loguje się do systemu i widzi swój grafik oraz swoje rezerwacje. | Codziennie, kilka razy dziennie i na krótko: przed rozpoczęciem pracy i między wizytami. | Średnie. Korzysta z telefonu lub komputera w miejscu pracy; potrzebuje czytelnego widoku dnia, a nie rozbudowanych funkcji. |
+| Administrator | Właściciel firmy usługowej (INT-01) albo osoba na recepcji (INT-04), której właściciel nadał tę rolę. Zarządza katalogiem usług, pracownikami, grafikami, kartoteką klientów, rezerwacjami i konfiguracją systemu. | Codziennie, wielokrotnie w ciągu dnia pracy; konfigurację zmienia rzadko (przy zmianie usług, cennika lub grafików). | Średnie do dobrych. Pracuje głównie na komputerze; zna arkusze kalkulacyjne i kalendarze internetowe, ale nie jest informatykiem. |
+
+W MVP osoba na recepcji nie ma osobnej roli w systemie i korzysta z roli Administrator. Czy recepcja powinna mieć węższe uprawnienia niż właściciel, ustalimy w wywiadzie z klientem.
 
 ## 1.5. Zakres systemu
 
-### W zakresie (MVP — realizacja w cz. 2)
+### W zakresie (MVP - realizacja w cz. 2)
 
-- **Katalog usług** — nazwa, opis, czas trwania, cena, wskazanie pracowników, którzy wykonują daną usługę.
-- **Pracownicy i grafik dostępności** — godziny pracy w tygodniu, wyjątki jednorazowe dla wybranej daty, dni wolne.
-- **Publiczna strona rezerwacji** — wybór usługi, pracownika i wolnego terminu, formularz danych klienta ze zgodą na przetwarzanie danych.
-- **Wyznaczanie wolnych terminów** — na podstawie grafiku pracownika, czasu trwania usługi, czasu buforowego i istniejących rezerwacji.
-- **Rezerwacja i jej cykl życia** — statusy potwierdzona, zrealizowana, anulowana; zabezpieczenie przed dwiema rezerwacjami na ten sam termin.
-- **Anulowanie przez klienta** — linkiem z jednorazowym tokenem, bez zakładania konta, w granicach reguły czasowej ustalonej przez usługodawcę.
-- **Powiadomienia e-mail** — potwierdzenie rezerwacji, przypomnienie przed wizytą, informacja o anulowaniu; treści ze szablonów z miejscami na dane.
-- **Panel administracyjny** — kalendarz rezerwacji, kartoteka klientów, zarządzanie usługami, pracownikami i grafikami, konfiguracja systemu (strefa czasowa, długość kroku terminu, czas buforowy, horyzont rezerwacji, reguła anulowania).
-- **Konta i role** — administrator i pracownik: logowanie, zmiana i reset hasła. Klient rezerwuje bez konta.
+- **Katalog usług** - nazwa, opis, czas trwania, cena, wskazanie pracowników, którzy wykonują daną usługę.
+- **Pracownicy i grafik dostępności** - godziny pracy w tygodniu, wyjątki jednorazowe dla wybranej daty, dni wolne.
+- **Publiczna strona rezerwacji** - wybór usługi, pracownika i wolnego terminu, formularz danych klienta ze zgodą na przetwarzanie danych.
+- **Wyznaczanie wolnych terminów** - na podstawie grafiku pracownika, czasu trwania usługi, czasu buforowego i istniejących rezerwacji.
+- **Rezerwacja i jej cykl życia** - statusy potwierdzona, zrealizowana, anulowana; zabezpieczenie przed dwiema rezerwacjami na ten sam termin.
+- **Anulowanie przez klienta** - linkiem z jednorazowym tokenem, bez zakładania konta, w granicach reguły czasowej ustalonej przez usługodawcę.
+- **Powiadomienia e-mail** - potwierdzenie rezerwacji, przypomnienie przed wizytą, informacja o anulowaniu; treści ze szablonów z miejscami na dane.
+- **Panel administracyjny** - kalendarz rezerwacji, kartoteka klientów, zarządzanie usługami, pracownikami i grafikami, konfiguracja systemu (strefa czasowa, długość kroku terminu, czas buforowy, horyzont rezerwacji, reguła anulowania).
+- **Konta i role** - administrator i pracownik: logowanie, zmiana i reset hasła. Klient rezerwuje bez konta.
 
 ### Poza zakresem (świadomie wyłączone)
 
-- **Obsługa wielu niezależnych usługodawców w jednej instancji** — model danych to przewiduje (patrz ADR), ale panel operatora i izolacja danych między usługodawcami to zakres osobnego projektu.
-- **Personalizacja wyglądu pod markę usługodawcy** (kolory, logo, czcionki) — nie wpływa na żaden z celów CEL-01…CEL-05.
-- **Widget do osadzania na obcej stronie** — tę samą potrzebę zaspokaja publiczna strona rezerwacji w ramach aplikacji.
-- **Powiadomienia SMS** — wymagają płatnej usługi zewnętrznej; e-mail wystarcza do realizacji CEL-04.
+- **Obsługa wielu niezależnych usługodawców w jednej instancji** - panel operatora i izolacja danych między usługodawcami to zakres osobnego projektu.
+- **Personalizacja wyglądu pod markę usługodawcy** (kolory, logo, czcionki) - nie wpływa na żaden z celów CEL-01…CEL-05.
+- **Widget do osadzania na obcej stronie** - tę samą potrzebę zaspokaja publiczna strona rezerwacji w ramach aplikacji.
+- **Powiadomienia SMS** - wymagają płatnej usługi zewnętrznej; e-mail wystarcza do realizacji CEL-04.
 - **Synchronizacja z zewnętrznym kalendarzem** (np. Google Calendar).
 - **Wiele lokalizacji jednego usługodawcy.**
 - **Usługi zdalne z linkiem do spotkania online.**
 - **Płatności i zadatki online.**
 - **Rezerwacje cykliczne i pakiety wizyt.**
 - **Lista rezerwowa na zajęty termin.**
-- **Konto klienta z historią wizyt** — dane klienta prowadzi usługodawca w kartotece.
-- **Aplikacja mobilna** — strona rezerwacji działa responsywnie w przeglądarce.
+- **Konto klienta z historią wizyt** - dane klienta prowadzi usługodawca w kartotece.
+- **Aplikacja mobilna** - strona rezerwacji działa responsywnie w przeglądarce.
 
 ### Możliwe rozszerzenia (po MVP)
 
