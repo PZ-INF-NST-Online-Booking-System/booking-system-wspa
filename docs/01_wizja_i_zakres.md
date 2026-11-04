@@ -73,6 +73,7 @@ Kolejność wynika z wpływu na cele biznesowe:
 4. Synchronizacja grafiku z zewnętrznym kalendarzem pracownika.
 5. Widget do osadzania na stronie usługodawcy.
 6. Płatności i zadatki online, lista rezerwowa, rezerwacje cykliczne.
+7. Rezerwacja kilku usług w ramach jednej wizyty (wniosek z analizy Booksy w 1.8).
 
 ## 1.6. Kontekst i systemy zewnętrzne
 
@@ -109,7 +110,7 @@ Jeśli wysyłka nadal się nie powiedzie, klient może nie otrzymać potwierdzen
 - system nie może zagwarantować, że wiadomość dotrze do skrzynki odbiorczej klienta;
 - do konfiguracji poczty potrzebne są odpowiednie dane dostępowe.
 
-**Decyzja proponowana:**  
+**Decyzja:**  
 Awaria serwera poczty nie powoduje utraty rezerwacji. System zapisuje rezerwację i umożliwia ponowną próbę wysłania wiadomości po przywróceniu dostępności usługi pocztowej.
 
 ## 1.7. Założenia i ograniczenia
@@ -120,15 +121,15 @@ Awaria serwera poczty nie powoduje utraty rezerwacji. System zapisuje rezerwacj�
 | Założenie | Usługodawca ma stały dostęp do Internetu, dzięki czemu może korzystać z panelu administracyjnego i zarządzać rezerwacjami oraz grafikami pracowników. |
 | Założenie | Usługodawca posiada adres e-mail, który może zostać wykorzystany do konfiguracji wysyłki wiadomości systemowych. |
 | Założenie | Usługodawca przekaże dane początkowe, takie jak lista usług, czas ich trwania, ceny, lista pracowników i ich godziny pracy, a następnie będzie odpowiadać za ich aktualizację. |
-| Ograniczenie | Projekt musi zostać zrealizowany w ciągu jednego semestru, równolegle z innymi zajęciami zespołu. |
+| Ograniczenie | Projekt musi zostać zrealizowany w ciągu jednego semestru, równolegle z innymi zajęciami zespołu, co ogranicza zakres MVP do funkcji wymienionych w sekcji 1.5. |
 | Ograniczenie | Projekt realizuje trzyosobowy zespół bez komercyjnego doświadczenia, co ogranicza czas i możliwości realizacji bardziej złożonych funkcji. |
 | Ograniczenie | Podczas realizacji projektu można wykorzystywać wyłącznie darmowe lub otwarte technologie, bez konieczności ponoszenia opłat licencyjnych. |
 | Ograniczenie | System musi spełniać wymagania RODO dotyczące ochrony danych osobowych klientów i pracowników. |
-| Ograniczenie | Zakres MVP jest ograniczony do funkcji wymienionych w sekcji 1.5. Funkcje wskazane jako wyłączone z MVP nie będą realizowane w podstawowej wersji systemu. |
 
 ## 1.8. Rozwiązania konkurencyjne / analiza istniejących narzędzi
-### Analiza rozwiązań konkurencyjnych
+
 W celu określenia dobrych praktyk i możliwych usprawnień przeanalizowano trzy systemy rezerwacji online: Booksy, Calendly oraz Reservio. Porównanie koncentruje się na intuicyjności interfejsu, przebiegu rezerwacji oraz dostępnych funkcjonalnościach. Celem analizy jest wskazanie rozwiązań, które warto wykorzystać w projektowanym systemie, oraz tych, których nie ma potrzeby uwzględniać w jego podstawowym zakresie (MVP).
+
 | Rozwiązanie | Co robi dobrze | Czego brakuje | Wniosek dla naszego projektu |
 |---|---|---|---|
 | **Booksy** | Intuicyjny interfejs komputerowy, przejrzysta prezentacja usług, możliwość wyboru specjalisty i terminu oraz dodawania kolejnych usług. Rezerwacja w testowanym przypadku nie wymagała zakładania konta. | Niektóre przyciski, m.in. umożliwiające przerwanie rezerwacji, nie były wystarczająco widoczne. Obsługa na komputerze była wygodniejsza niż na smartfonie. Rezerwowanie kilku usług może utrudniać dobranie dogodnego terminu. | Zapewnić prostą rezerwację bez konta, czytelny wybór usługi, pracownika i terminu oraz dobrze widoczne przyciski nawigacyjne. Zadbać o wygodną obsługę na urządzeniach mobilnych. Rezerwacje łączone można rozważyć jako przyszłe rozszerzenie. |
