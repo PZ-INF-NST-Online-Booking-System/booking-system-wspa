@@ -13,26 +13,26 @@
 
 ## Role podczas wywiadu
 
-| Osoba | Zadanie |
-|---|---|
-| Aneta Waśko | prowadzi rozmowę i zadaje pytania z listy |
-| Hubert Pulik | notuje odpowiedzi i ustalenia, dopytuje o zakres i priorytety |
+| Osoba           | Zadanie                                                              |
+| --------------- | -------------------------------------------------------------------- |
+| Aneta Waśko     | prowadzi rozmowę i zadaje pytania z listy                            |
+| Hubert Pulik    | notuje odpowiedzi i ustalenia, dopytuje o zakres i priorytety        |
 | Hanna Yablonska | pilnuje czasu, dopytuje o szczegóły dotyczące danych i poczty e-mail |
 
 Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego, jak potoczy się rozmowa, bo bez odpowiedzi na nie nie da się dokończyć wymagań i reguł biznesowych w M2. Jeśli brakuje czasu, pomijamy pytania z grupy G, a nie z grup B-D.
 
 ## Założenia do potwierdzenia
 
-| Nr | Założenie | Skąd | Pytanie |
-|---|---|---|---|
-| Z-01 | Klient rezerwuje bez zakładania konta. | 1.5 | B6 |
-| Z-02 | Rezerwacja jest potwierdzona od razu, bez akceptacji przez Usługodawcę. | 1.5, 02 Status rezerwacji | B1 |
-| Z-03 | Powiadomienia wysyłamy tylko e-mailem, bez SMS. | 1.5 | F1 |
-| Z-04 | Przypomnienie wysyłamy 24 godziny przed Terminem. | 1.2 CEL-04 | F2 |
-| Z-05 | Usługodawca ma jedną lokalizację. | 1.5 | A5 |
-| Z-06 | Osoba na recepcji korzysta z roli Administrator. | 1.4 | E2 |
-| Z-07 | Usługodawca przekaże dane początkowe (Usługi, ceny, Pracownicy, Grafiki dostępności) i będzie je aktualizować. | 1.7 | G3 |
-| Z-08 | Wartości bazowe celów (obecna liczba telefonów, odsetek nieobecności, liczba kolizji) są do ustalenia; bez nich nie da się ocenić CEL-01...CEL-05. | 1.2 | A2, A3, A4 |
+| Nr   | Założenie                                                                                                                                          | Skąd                      | Pytanie    |
+| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
+| Z-01 | Klient rezerwuje bez zakładania konta.                                                                                                             | 1.5                       | B6         |
+| Z-02 | Rezerwacja jest potwierdzona od razu, bez akceptacji przez Usługodawcę.                                                                            | 1.5, 02 Status rezerwacji | B1         |
+| Z-03 | Powiadomienia wysyłamy tylko e-mailem, bez SMS.                                                                                                    | 1.5                       | F1         |
+| Z-04 | Przypomnienie wysyłamy 24 godziny przed Terminem.                                                                                                  | 1.2 CEL-04                | F2         |
+| Z-05 | Usługodawca ma jedną lokalizację.                                                                                                                  | 1.5                       | A5         |
+| Z-06 | Osoba na recepcji korzysta z roli Administrator.                                                                                                   | 1.4                       | E2         |
+| Z-07 | Usługodawca przekaże dane początkowe (Usługi, ceny, Pracownicy, Grafiki dostępności) i będzie je aktualizować.                                     | 1.7                       | G3         |
+| Z-08 | Wartości bazowe celów (obecna liczba telefonów, odsetek nieobecności, liczba kolizji) są do ustalenia; bez nich nie da się ocenić CEL-01...CEL-05. | 1.2                       | A2, A3, A4 |
 
 ## Pytania
 
@@ -90,14 +90,14 @@ Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego,
 ### Odpowiedzi
 
 | Pytanie | Odpowiedź klienta | Wpływ na dokumentację |
-|---|---|---|
-| | | |
+| ------- | ----------------- | --------------------- |
+|         |                   |                       |
 
 ### Potwierdzone i odrzucone założenia
 
-| Nr | Potwierdzone / odrzucone | Uwagi |
-|---|---|---|
-| | | |
+| Nr  | Potwierdzone / odrzucone | Uwagi |
+| --- | ------------------------ | ----- |
+|     |                          |       |
 
 ### Nowe ustalenia i otwarte sprawy
 

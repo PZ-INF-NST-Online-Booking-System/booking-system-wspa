@@ -20,7 +20,7 @@
 
 ## Zasady
 
-- Nie wysyłamy commitów bezpośrednio do `main`, bo gałąź jest chroniona (*branch protection* / *protected branch*).
+- Nie wysyłamy commitów bezpośrednio do `main`, bo gałąź jest chroniona (_branch protection_ / _protected branch_).
 - Jeden PR/MR dotyczy jednej rzeczy. Lepiej kilka małych niż jeden ogromny.
 - Diagramy zapisujemy jako kod **Mermaid** w plikach `.md`. Obrazy (makiety) trzymamy w `docs/makiety/` jako PNG/SVG, a w dokumencie dajemy link do źródła (Figma/Penpot).
 - Nie dodajemy plików binarnych `.docx`/`.pdf` jako źródła dokumentacji. Źródłem jest Markdown.
@@ -36,4 +36,4 @@ git tag -a m2 -m "Kamień milowy M2: wymagania"
 git push origin m2
 ```
 
-Następnie tworzy *Release* (GitHub) albo *Release* w GitLab z tego tagu i krótko opisuje, co się zmieniło.
+Następnie tworzy _Release_ (GitHub) albo _Release_ w GitLab z tego tagu i krótko opisuje, co się zmieniło.

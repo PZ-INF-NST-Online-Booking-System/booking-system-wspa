@@ -4,24 +4,24 @@
 
 <!-- Priorytet MoSCoW: M (Must), S (Should), C (Could), W (Won't – tym razem nie). Źródło: kto/co zgłosiło wymaganie (INT-xx, wywiad z dnia…). -->
 
-| ID | Wymaganie (System musi/powinien…) | Aktor | Priorytet | Źródło | Historyjki |
-|---|---|---|---|---|---|
-| WF-01 | System musi umożliwiać Klientowi utworzenie Rezerwacji wolnego Zasobu w wybranym Terminie. | Klient | M | INT-01, wywiad 1 | US-01, US-02 |
-| WF-02 | | | | | |
+| ID    | Wymaganie (System musi/powinien…)                                                          | Aktor  | Priorytet | Źródło           | Historyjki   |
+| ----- | ------------------------------------------------------------------------------------------ | ------ | --------- | ---------------- | ------------ |
+| WF-01 | System musi umożliwiać Klientowi utworzenie Rezerwacji wolnego Zasobu w wybranym Terminie. | Klient | M         | INT-01, wywiad 1 | US-01, US-02 |
+| WF-02 |                                                                                            |        |           |                  |              |
 
 ## 3.2. Wymagania niefunkcjonalne
 
 <!-- Każde wymaganie MUSI być mierzalne/weryfikowalne. Kategorie jakości wg ISO/IEC 25010 (wyd. 2023; w nawiasie nazwy z wyd. 2011). Wymagania prawne to ograniczenia spoza modelu jakości – zapisujemy je w tej samej tabeli z kategorią „Ograniczenie prawne”. -->
 
-| ID | Kategoria | Wymaganie | Miara / sposób weryfikacji | Priorytet |
-|---|---|---|---|---|
-| WNF-01 | Efektywność wydajnościowa | Lista dostępnych Zasobów ładuje się w czasie ≤ 2 s dla 95% żądań przy 50 równoczesnych użytkownikach. | test obciążeniowy | M |
-| WNF-02 | Bezpieczeństwo | | | |
-| WNF-03 | Zdolność interakcji (użyteczność) | | | |
-| WNF-04 | Zdolność interakcji: inkluzywność (dostępność, accessibility) | Interfejs spełnia WCAG 2.2 na poziomie AA. | audyt narzędziem + checklista | S |
-| WNF-05 | Niezawodność | | | |
-| WNF-06 | Łatwość utrzymania (utrzymywalność) | | | |
-| WNF-07 | Ograniczenie prawne (poza ISO 25010) | System przetwarza dane osobowe zgodnie z RODO. | przegląd z checklistą z 08_bezpieczenstwo | M |
+| ID     | Kategoria                                                     | Wymaganie                                                                                             | Miara / sposób weryfikacji                | Priorytet |
+| ------ | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------- | --------- |
+| WNF-01 | Efektywność wydajnościowa                                     | Lista dostępnych Zasobów ładuje się w czasie ≤ 2 s dla 95% żądań przy 50 równoczesnych użytkownikach. | test obciążeniowy                         | M         |
+| WNF-02 | Bezpieczeństwo                                                |                                                                                                       |                                           |           |
+| WNF-03 | Zdolność interakcji (użyteczność)                             |                                                                                                       |                                           |           |
+| WNF-04 | Zdolność interakcji: inkluzywność (dostępność, accessibility) | Interfejs spełnia WCAG 2.2 na poziomie AA.                                                            | audyt narzędziem + checklista             | S         |
+| WNF-05 | Niezawodność                                                  |                                                                                                       |                                           |           |
+| WNF-06 | Łatwość utrzymania (utrzymywalność)                           |                                                                                                       |                                           |           |
+| WNF-07 | Ograniczenie prawne (poza ISO 25010)                          | System przetwarza dane osobowe zgodnie z RODO.                                                        | przegląd z checklistą z 08_bezpieczenstwo | M         |
 
 ## 3.3. Historyjki użytkownika
 
@@ -58,6 +58,6 @@ Scenariusz: Termin zajęty
 
 ## 3.4. Reguły biznesowe
 
-| ID | Reguła |
-|---|---|
+| ID    | Reguła                                                                |
+| ----- | --------------------------------------------------------------------- |
 | RB-01 | np. Rezerwację można anulować najpóźniej 24 h przed jej rozpoczęciem. |

@@ -1,4 +1,3 @@
-
 ## Cel
 
 <!-- Co ma powstać? -->
