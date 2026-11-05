@@ -2,11 +2,11 @@
 
 ## 8.1. Role i uprawnienia
 
-| Uprawnienie / operacja | Klient | Administrator |
-|---|---|---|
-| Przeglądanie zasobów | ✔ | ✔ |
+| Uprawnienie / operacja            | Klient     | Administrator |
+| --------------------------------- | ---------- | ------------- |
+| Przeglądanie zasobów              | ✔          | ✔             |
 | Tworzenie i anulowanie rezerwacji | ✔ (własne) | ✔ (wszystkie) |
-| Zarządzanie zasobami | | ✔ |
+| Zarządzanie zasobami              |            | ✔             |
 
 ## 8.2. Uwierzytelnianie i sesje
 
@@ -14,22 +14,22 @@
 
 ## 8.3. Analiza zagrożeń (STRIDE)
 
-| Zagrożenie | Przykład w naszym systemie | Zabezpieczenie | WNF |
-|---|---|---|---|
-| **S**poofing (podszywanie się) | | | |
-| **T**ampering (manipulacja danymi) | | | |
-| **R**epudiation (wypieranie się) | | dziennik audytowy | |
-| **I**nformation disclosure (ujawnienie) | | | |
-| **D**enial of service | | | |
-| **E**levation of privilege | | | |
+| Zagrożenie                              | Przykład w naszym systemie | Zabezpieczenie    | WNF |
+| --------------------------------------- | -------------------------- | ----------------- | --- |
+| **S**poofing (podszywanie się)          |                            |                   |     |
+| **T**ampering (manipulacja danymi)      |                            |                   |     |
+| **R**epudiation (wypieranie się)        |                            | dziennik audytowy |     |
+| **I**nformation disclosure (ujawnienie) |                            |                   |     |
+| **D**enial of service                   |                            |                   |     |
+| **E**levation of privilege              |                            |                   |     |
 
 ## 8.4. OWASP Top 10 — zastosowane środki
 
-| Kategoria OWASP | Środek w projekcie |
-|---|---|
+| Kategoria OWASP           | Środek w projekcie                                          |
+| ------------------------- | ----------------------------------------------------------- |
 | A01 Broken Access Control | kontrola uprawnień po stronie serwera dla każdego endpointu |
-| A03 Injection | zapytania parametryzowane / ORM |
-| … | |
+| A03 Injection             | zapytania parametryzowane / ORM                             |
+| …                         |                                                             |
 
 ## 8.5. Ochrona danych osobowych (RODO)
 

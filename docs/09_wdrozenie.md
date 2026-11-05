@@ -2,11 +2,11 @@
 
 ## 9.1. Środowiska
 
-| Środowisko | Przeznaczenie | Gdzie | Dane |
-|---|---|---|---|
-| dev | praca programistów | lokalnie (Docker Compose) | dane testowe |
-| test/staging | testy akceptacyjne | np. darmowy hosting / serwer uczelni | dane testowe |
-| prod | użytkownicy | | dane rzeczywiste |
+| Środowisko   | Przeznaczenie      | Gdzie                                | Dane             |
+| ------------ | ------------------ | ------------------------------------ | ---------------- |
+| dev          | praca programistów | lokalnie (Docker Compose)            | dane testowe     |
+| test/staging | testy akceptacyjne | np. darmowy hosting / serwer uczelni | dane testowe     |
+| prod         | użytkownicy        |                                      | dane rzeczywiste |
 
 ## 9.2. Diagram wdrożenia
 
@@ -44,13 +44,13 @@ flowchart LR
 
 ## 9.5. Plan wdrożenia u klienta
 
-| Krok | Opis | Odpowiedzialny |
-|---|---|---|
-| 1 | Przygotowanie infrastruktury | |
-| 2 | Migracja / import danych początkowych | |
-| 3 | Szkolenie użytkowników | |
-| 4 | Uruchomienie pilotażowe | |
-| 5 | Odbiór (testy akceptacyjne klienta) | |
+| Krok | Opis                                  | Odpowiedzialny |
+| ---- | ------------------------------------- | -------------- |
+| 1    | Przygotowanie infrastruktury          |                |
+| 2    | Migracja / import danych początkowych |                |
+| 3    | Szkolenie użytkowników                |                |
+| 4    | Uruchomienie pilotażowe               |                |
+| 5    | Odbiór (testy akceptacyjne klienta)   |                |
 
 ## 9.6. Kopie zapasowe, monitoring, utrzymanie
 

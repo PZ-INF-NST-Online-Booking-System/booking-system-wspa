@@ -61,24 +61,24 @@ erDiagram
 
 ### Tabela `reservation`
 
-| Kolumna | Typ | Null | Domyślnie | Ograniczenia | Opis |
-|---|---|---|---|---|---|
-| id | SERIAL | nie | | PK | |
-| customer_id | INT | nie | | FK → customer.id, ON DELETE RESTRICT | |
-| starts_at | TIMESTAMPTZ | nie | | starts_at < ends_at | |
-| status | VARCHAR(20) | nie | 'NOWA' | CHECK IN ('NOWA','POTWIERDZONA','ANULOWANA','ZREALIZOWANA') | |
+| Kolumna     | Typ         | Null | Domyślnie | Ograniczenia                                                | Opis |
+| ----------- | ----------- | ---- | --------- | ----------------------------------------------------------- | ---- |
+| id          | SERIAL      | nie  |           | PK                                                          |      |
+| customer_id | INT         | nie  |           | FK → customer.id, ON DELETE RESTRICT                        |      |
+| starts_at   | TIMESTAMPTZ | nie  |           | starts_at < ends_at                                         |      |
+| status      | VARCHAR(20) | nie  | 'NOWA'    | CHECK IN ('NOWA','POTWIERDZONA','ANULOWANA','ZREALIZOWANA') |      |
 
 ## 6.4. Indeksy i reguły integralności
 
-| Obiekt | Definicja | Cel |
-|---|---|---|
+| Obiekt                        | Definicja                         | Cel                                 |
+| ----------------------------- | --------------------------------- | ----------------------------------- |
 | idx_reservation_resource_time | (resource_id, starts_at, ends_at) | szybkie wykrywanie kolizji (WNF-01) |
 
 ## 6.5. Dane wrażliwe i retencja
 
-| Dane | Kategoria (osobowe / wrażliwe / zwykłe) | Ochrona | Okres przechowywania |
-|---|---|---|---|
-| email klienta | osobowe | | |
+| Dane          | Kategoria (osobowe / wrażliwe / zwykłe) | Ochrona | Okres przechowywania |
+| ------------- | --------------------------------------- | ------- | -------------------- |
+| email klienta | osobowe                                 |         |                      |
 
 ## 6.6. Dane początkowe i testowe
 

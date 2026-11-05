@@ -54,14 +54,14 @@ flowchart LR
 
 ### UC-01: Zarezerwuj zasób
 
-| Pole | Opis |
-|---|---|
-| Aktor główny | Klient |
-| Cel | |
-| Powiązania | WF-01, US-01 |
-| Warunki początkowe | Klient jest zalogowany. |
+| Pole                     | Opis                                          |
+| ------------------------ | --------------------------------------------- |
+| Aktor główny             | Klient                                        |
+| Cel                      |                                               |
+| Powiązania               | WF-01, US-01                                  |
+| Warunki początkowe       | Klient jest zalogowany.                       |
 | Warunki końcowe (sukces) | Rezerwacja zapisana ze statusem POTWIERDZONA. |
-| Wyzwalacz | |
+| Wyzwalacz                |                                               |
 
 **Scenariusz główny:**
 

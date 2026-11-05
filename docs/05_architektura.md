@@ -31,8 +31,8 @@ flowchart LR
 ```
 
 | Kontener | Technologia | Odpowiedzialność |
-|---|---|---|
-| | | |
+| -------- | ----------- | ---------------- |
+|          |             |                  |
 
 ## 5.4. Komponenty (C4, poziom 3) – dla backendu
 
@@ -42,24 +42,24 @@ flowchart LR
 
 <!-- Lista endpointów (lub odnośnik do pliku OpenAPI w docs/api/openapi.yaml). -->
 
-| Metoda | Ścieżka | Opis | Uprawnienia | UC/US |
-|---|---|---|---|---|
-| POST | /api/reservations | Utworzenie rezerwacji | Klient | UC-01 |
+| Metoda | Ścieżka           | Opis                  | Uprawnienia | UC/US |
+| ------ | ----------------- | --------------------- | ----------- | ----- |
+| POST   | /api/reservations | Utworzenie rezerwacji | Klient      | UC-01 |
 
 ## 5.6. Stos technologiczny (propozycja dla cz. 2)
 
-| Warstwa | Technologia | Uzasadnienie (ADR) |
-|---|---|---|
-| Frontend | | |
-| Backend | | |
-| Baza danych | | |
-| Testy | | |
+| Warstwa     | Technologia | Uzasadnienie (ADR) |
+| ----------- | ----------- | ------------------ |
+| Frontend    |             |                    |
+| Backend     |             |                    |
+| Baza danych |             |                    |
+| Testy       |             |                    |
 
 ## 5.7. Decyzje architektoniczne
 
 Lista ADR w katalogu [adr/](adr/):
 
-| ADR | Tytuł | Status |
-|---|---|---|
-| [ADR-0000](adr/0000-wzor-adr.md) | Wzór (nie usuwać, kopiować) | wzór |
-| ADR-0001 | [pierwsza decyzja zespołu] | |
+| ADR                              | Tytuł                       | Status |
+| -------------------------------- | --------------------------- | ------ |
+| [ADR-0000](adr/0000-wzor-adr.md) | Wzór (nie usuwać, kopiować) | wzór   |
+| ADR-0001                         | [pierwsza decyzja zespołu]  |        |
