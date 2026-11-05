@@ -5,7 +5,7 @@
 
 ## O systemie
 
-System obsługuje zapisy na wizyty u usługodawcy pracującego na terminy — gabinetu, salonu lub konsultanta z obsadą od jednej do kilku osób. Klient wybiera usługę, pracownika i wolny termin na publicznej stronie rezerwacji, bez zakładania konta i o dowolnej porze, a system pokazuje wyłącznie terminy faktycznie dostępne, wyklucza kolizje i wysyła potwierdzenie oraz przypomnienie e-mailem. Administrator prowadzi katalog usług, grafiki pracowników i kartotekę klientów w jednym miejscu, zamiast kalendarza papierowego i zapisów przyjmowanych telefonicznie.
+System obsługuje zapisy na wizyty u usługodawcy pracującego na terminy - gabinetu, salonu lub konsultanta z obsadą od jednej do kilku osób. Klient wybiera usługę, pracownika i wolny termin na publicznej stronie rezerwacji, bez zakładania konta i o dowolnej porze, a system pokazuje wyłącznie terminy faktycznie dostępne, wyklucza kolizje i wysyła potwierdzenie oraz przypomnienie e-mailem. Administrator prowadzi katalog usług, grafiki pracowników i kartotekę klientów w jednym miejscu, zamiast kalendarza papierowego i zapisów przyjmowanych telefonicznie.
 
 Zakres MVP i świadome wyłączenia opisuje [Wizja i zakres](docs/01_wizja_i_zakres.md#15-zakres-systemu).
 
@@ -17,11 +17,11 @@ Zakres MVP i świadome wyłączenia opisuje [Wizja i zakres](docs/01_wizja_i_zak
 | Aneta Waśko   | @Aneta2021          | Analityk wymagań          |                                   |
 | Hanna Yablonska | @hanna-yablonska              | Architekt / projektant BD | Inżynier jakości (testy, macierz) |
 
-Zespół liczy trzy osoby, więc role trzeba łączyć. Zamiast schematu proponowanego dla trzyosobowych zespołów przyjęliśmy podział według doświadczenia: kierownik projektu ma na koncie projektowanie makiet i prototypów oraz wdrożenia produkcyjne, dlatego bierze dodatkowo projektowanie UX/UI i model wdrożenia. Architekt przejmuje testy i macierz śledzenia, bo obie rzeczy opierają się na modelu danych i liście endpointów, które sam projektuje. Analityk prowadzi wymagania w całości i bez obciążenia dodatkową rolą — to najcięższy pojedynczy obszar dokumentacji.
+Zespół liczy trzy osoby, więc role trzeba łączyć. Zamiast schematu proponowanego dla trzyosobowych zespołów przyjęliśmy podział według doświadczenia: kierownik projektu ma na koncie projektowanie makiet i prototypów oraz wdrożenia produkcyjne, dlatego bierze dodatkowo projektowanie UX/UI i model wdrożenia. Architekt przejmuje testy i macierz śledzenia, bo obie rzeczy opierają się na modelu danych i liście endpointów, które sam projektuje. Analityk prowadzi wymagania w całości i bez obciążenia dodatkową rolą - to najcięższy pojedynczy obszar dokumentacji.
 
-Podział rozkłada też skupiska pracy na kolejne kamienie: M1 i M4 obciążają kierownika projektu, M2 analityka, M3 architekta. Historyjki użytkownika pisze analityk, a przypadki testowe do nich — architekt, więc kryteria akceptacji weryfikuje ktoś inny niż ich autor.
+Podział rozkłada też skupiska pracy na kolejne kamienie: M1 i M4 obciążają kierownika projektu, M2 analityka, M3 architekta. Historyjki użytkownika pisze analityk, a przypadki testowe do nich - architekt, więc kryteria akceptacji weryfikuje ktoś inny niż ich autor.
 
-Po dołączeniu czwartej osoby wydzielamy rolę inżyniera jakości (testy, wdrożenie, macierz śledzenia); po piątej — procesy i przypadki użycia przechodzą do drugiego analityka.
+Po dołączeniu czwartej osoby wydzielamy rolę inżyniera jakości (testy, wdrożenie, macierz śledzenia); po piątej - procesy i przypadki użycia przechodzą do drugiego analityka.
 
 ### Macierz odpowiedzialności (RACI)
 
@@ -59,7 +59,7 @@ R = wykonuje, A = odpowiada (tylko jedna osoba), C = konsultowany, I = informowa
 | 09  | [Wdrożenie](docs/09_wdrozenie.md)                                                    | PM         | ⬜     |
 | 10  | [Testy i jakość](docs/10_testy_i_jakosc.md)                                          | Architekt  | ⬜     |
 | 11  | [Plan realizacji cz. 2](docs/11_plan_realizacji.md)                                  | PM         | ⬜     |
-| —   | [Macierz śledzenia wymagań](docs/macierz_sledzenia.md)                               | Architekt  | ⬜     |
+| -   | [Macierz śledzenia wymagań](docs/macierz_sledzenia.md)                               | Architekt  | ⬜     |
 
 Statusy: ⬜ nie rozpoczęto · 🟨 w trakcie · 🟩 gotowe do recenzji · ✅ zatwierdzone
 

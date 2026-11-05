@@ -19,7 +19,7 @@
 | Hubert Pulik | notuje odpowiedzi i ustalenia, dopytuje o zakres i priorytety |
 | Hanna Yablonska | pilnuje czasu, dopytuje o szczegóły dotyczące danych i poczty e-mail |
 
-Zasada: pytania oznaczone **(TL)** muszą paść. Jeśli brakuje czasu, pomijamy pytania z grupy G, a nie z grup B-D.
+Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego, jak potoczy się rozmowa, bo bez odpowiedzi na nie nie da się dokończyć wymagań i reguł biznesowych w M2. Jeśli brakuje czasu, pomijamy pytania z grupy G, a nie z grup B-D.
 
 ## Założenia do potwierdzenia
 
@@ -42,35 +42,35 @@ Zasada: pytania oznaczone **(TL)** muszą paść. Jeśli brakuje czasu, pomijamy
 2. Ile telefonów i wiadomości w sprawie Rezerwacji odbieracie w typowym dniu i kto je odbiera, gdy wszyscy pracują z Klientami? (→ 1.2 CEL-01)
 3. Co się dzieje dziś, kiedy Klient nie przyjdzie na umówioną wizytę? Jak często to się zdarza? (→ 1.2 CEL-04)
 4. Proszę opisać ostatnią sytuację, w której dwie osoby zostały zapisane na ten sam Termin. Jak to wyszło na jaw i jak to rozwiązaliście? (→ 1.2 CEL-03)
-5. **(TL)** Czy w MVP potrzebna jest obsługa więcej niż jednej lokalizacji? (→ 1.5)
+5. **(obowiązkowe)** Czy w MVP potrzebna jest obsługa więcej niż jednej lokalizacji? (→ 1.5)
 
 ### B. Reguły rezerwacji
 
-1. **(TL)** Czy Rezerwacja jest potwierdzona od razu, czy ktoś musi ją zaakceptować? (→ 02 Status rezerwacji)
-2. **(TL)** Na ile dni w przód można się zapisać i jakie jest minimalne wyprzedzenie? (→ 02 Horyzont rezerwacji)
-3. **(TL)** Czy między wizytami potrzebna jest przerwa i czy zależy od rodzaju Usługi? (→ 02 Czas buforowy)
+1. **(obowiązkowe)** Czy Rezerwacja jest potwierdzona od razu, czy ktoś musi ją zaakceptować? (→ 02 Status rezerwacji)
+2. **(obowiązkowe)** Na ile dni w przód można się zapisać i jakie jest minimalne wyprzedzenie? (→ 02 Horyzont rezerwacji)
+3. **(obowiązkowe)** Czy między wizytami potrzebna jest przerwa i czy zależy od rodzaju Usługi? (→ 02 Czas buforowy)
 4. Jak Klient wybiera dziś Pracownika? Co ma się stać, gdy Klientowi jest obojętne, kto wykona Usługę? (→ 1.5 Publiczna strona rezerwacji)
 5. Jak zmieniają się godziny pracy Pracowników w ciągu miesiąca i kto o tym decyduje? (→ 02 Grafik dostępności, Wyjątek w grafiku)
 6. Jakie dane musicie dostać od Klienta przy zapisie, a o jakie nie chcecie go pytać? (→ 1.5, 08)
 
 ### C. Anulowanie i nieobecności
 
-1. **(TL)** Do kiedy Klient może odwołać wizytę samodzielnie? (→ 02 Reguła anulowania)
-2. **(TL)** Czy Klient może przenieść wizytę na inny termin, czy musi odwołać i zapisać się ponownie? (→ 1.5 rozszerzenia)
+1. **(obowiązkowe)** Do kiedy Klient może odwołać wizytę samodzielnie? (→ 02 Reguła anulowania)
+2. **(obowiązkowe)** Czy Klient może przenieść wizytę na inny termin, czy musi odwołać i zapisać się ponownie? (→ 1.5 rozszerzenia)
 3. Co ma się dziać, gdy Klient chce odwołać wizytę po upływie tego czasu? (→ 02 Reguła anulowania)
 4. Jak chcecie odróżniać Klientów, którzy nie przyszli, od tych, którzy przyszli? Do czego ta informacja byłaby potrzebna? (→ 02 Status rezerwacji ZREALIZOWANA)
 
 ### D. Dane klientów i ich ochrona
 
-1. **(TL)** Jak długo przechowujecie dane Klientów po ostatniej wizycie? (→ 08, 1.7)
+1. **(obowiązkowe)** Jak długo przechowujecie dane Klientów po ostatniej wizycie? (→ 08, 1.7)
 2. Co dziś robicie, gdy Klient prosi o usunięcie swoich danych? (→ 08, INT-06)
 3. Jakie informacje o Klientach zapisujecie dziś poza imieniem i kontaktem i do czego ich używacie? (→ 02 Kartoteka klientów)
 
 ### E. Role i uprawnienia
 
-1. **(TL)** Czy Pracownik loguje się do systemu, czy grafik prowadzi wyłącznie Administrator? (→ 1.4)
+1. **(obowiązkowe)** Czy Pracownik loguje się do systemu, czy grafik prowadzi wyłącznie Administrator? (→ 1.4)
 2. Kto dziś odbiera telefony i zapisuje Klientów? Czy ta osoba powinna mieć te same możliwości co właściciel, np. zmianę cennika i Grafików dostępności? (→ 1.4, Z-06)
-3. **(TL)** Czy Pracownik ma widzieć dane kontaktowe Klienta i notatki o nim? (→ 08)
+3. **(obowiązkowe)** Czy Pracownik ma widzieć dane kontaktowe Klienta i notatki o nim? (→ 08)
 4. Jak ma wyglądać zapis Klienta, który dzwoni zamiast rezerwować przez stronę? (→ 1.5 Panel administracyjny)
 
 ### F. Powiadomienia

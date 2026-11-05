@@ -89,7 +89,7 @@ W MVP osoba na recepcji nie ma osobnej roli w systemie i korzysta z roli Adminis
 
 ### Poza zakresem (świadomie wyłączone)
 
-- **Obsługa wielu niezależnych usługodawców w jednej instancji** - panel operatora i izolacja danych między usługodawcami to zakres osobnego projektu.
+- **Obsługa wielu niezależnych usługodawców w jednej instancji** - panel operatora i izolacja danych między usługodawcami to zakres osobnego projektu. Model danych projektujemy pod jednego usługodawcę, więc dodanie wielodostępności wymagałoby zmiany schematu, a nie samego przełącznika (decyzja w ADR w M3).
 - **Personalizacja wyglądu pod markę usługodawcy** (kolory, logo, czcionki) - nie wpływa na żaden z celów CEL-01…CEL-05.
 - **Widget do osadzania na obcej stronie** - tę samą potrzebę zaspokaja publiczna strona rezerwacji w ramach aplikacji.
 - **Powiadomienia SMS** - wymagają płatnej usługi zewnętrznej; e-mail wystarcza do realizacji CEL-04.
