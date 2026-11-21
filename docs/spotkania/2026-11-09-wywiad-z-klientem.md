@@ -23,16 +23,16 @@ Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego,
 
 ## Założenia do potwierdzenia
 
-| Nr   | Założenie                                                                                                                                          | Skąd                      | Pytanie    |
-| ---- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
-| Z-01 | Klient rezerwuje bez zakładania konta.                                                                                                             | 1.5                       | B6         |
-| Z-02 | Rezerwacja jest potwierdzona od razu, bez akceptacji przez Usługodawcę.                                                                            | 1.5, 02 Status rezerwacji | B1         |
-| Z-03 | Powiadomienia wysyłamy tylko e-mailem, bez SMS.                                                                                                    | 1.5                       | F1         |
-| Z-04 | Przypomnienie wysyłamy 24 godziny przed Terminem.                                                                                                  | 1.2 CEL-04                | F2         |
-| Z-05 | Usługodawca ma jedną lokalizację.                                                                                                                  | 1.5                       | A5         |
-| Z-06 | Osoba na recepcji korzysta z roli Administrator.                                                                                                   | 1.4                       | E2         |
-| Z-07 | Usługodawca przekaże dane początkowe (Usługi, ceny, Pracownicy, Grafiki dostępności) i będzie je aktualizować.                                     | 1.7                       | G3         |
-| Z-08 | Wartości bazowe celów (obecna liczba telefonów, odsetek nieobecności, liczba kolizji) są do ustalenia; bez nich nie da się ocenić CEL-01...CEL-05. | 1.2                       | A2, A3, A4 |
+| Nr     | Założenie                                                                                                                                          | Skąd                      | Pytanie    |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ---------- |
+| ZAL-01 | Klient rezerwuje bez zakładania konta.                                                                                                             | 1.5                       | B6         |
+| ZAL-02 | Rezerwacja jest potwierdzona od razu, bez akceptacji przez Usługodawcę.                                                                            | 1.5, 02 Status rezerwacji | B1         |
+| ZAL-03 | Powiadomienia wysyłamy tylko e-mailem, bez SMS.                                                                                                    | 1.5                       | F1         |
+| ZAL-04 | Przypomnienie wysyłamy 24 godziny przed Terminem.                                                                                                  | 1.2 CEL-04                | F2         |
+| ZAL-05 | Usługodawca ma jedną lokalizację.                                                                                                                  | 1.5                       | A5         |
+| ZAL-06 | Osoba na recepcji korzysta z roli Administrator.                                                                                                   | 1.4                       | E2         |
+| ZAL-07 | Usługodawca przekaże dane początkowe (Usługi, ceny, Pracownicy, Grafiki dostępności) i będzie je aktualizować.                                     | 1.7                       | G3         |
+| ZAL-08 | Wartości bazowe celów (obecna liczba telefonów, odsetek nieobecności, liczba kolizji) są do ustalenia; bez nich nie da się ocenić CEL-01...CEL-05. | 1.2                       | A2, A3, A4 |
 
 ## Pytania
 
@@ -69,13 +69,13 @@ Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego,
 ### E. Role i uprawnienia
 
 1. **(obowiązkowe)** Czy Pracownik loguje się do systemu, czy grafik prowadzi wyłącznie Administrator? (→ 1.4)
-2. Kto dziś odbiera telefony i zapisuje Klientów? Czy ta osoba powinna mieć te same możliwości co właściciel, np. zmianę cennika i Grafików dostępności? (→ 1.4, Z-06)
+2. Kto dziś odbiera telefony i zapisuje Klientów? Czy ta osoba powinna mieć te same możliwości co właściciel, np. zmianę cennika i Grafików dostępności? (→ 1.4, ZAL-06)
 3. **(obowiązkowe)** Czy Pracownik ma widzieć dane kontaktowe Klienta i notatki o nim? (→ 08)
 4. Jak ma wyglądać zapis Klienta, który dzwoni zamiast rezerwować przez stronę? (→ 1.5 Panel administracyjny)
 
 ### F. Powiadomienia
 
-1. Jakimi kanałami kontaktujecie się dziś z Klientami i który z nich Klienci odczytują najszybciej? (→ 1.5, Z-03)
+1. Jakimi kanałami kontaktujecie się dziś z Klientami i który z nich Klienci odczytują najszybciej? (→ 1.5, ZAL-03)
 2. Kiedy przypomnienie o wizycie ma realnie szansę zapobiec nieobecności: dzień wcześniej, kilka godzin wcześniej? (→ 1.2 CEL-04)
 3. Co ma się stać, gdy Klient nie dostanie potwierdzenia, bo wiadomość nie dotarła? Kto i skąd ma się o tym dowiedzieć? (→ 1.6.1)
 
@@ -83,26 +83,13 @@ Zasada: pytania oznaczone **(obowiązkowe)** muszą paść niezależnie od tego,
 
 1. Po czym po trzech miesiącach od wdrożenia poznacie, że system się sprawdził? (→ 1.2)
 2. Bez której funkcji system nie miałby dla Was sensu, a z której moglibyście zrezygnować w pierwszej wersji? (→ 1.5)
-3. Kto przygotuje listę Usług, cen i godzin pracy przed uruchomieniem i jak często te dane się zmieniają? (→ 1.7, Z-07)
+3. Kto przygotuje listę Usług, cen i godzin pracy przed uruchomieniem i jak często te dane się zmieniają? (→ 1.7, ZAL-07)
 
-## Notatki z wywiadu (uzupełniamy po zajęciach 2)
+## Notatki z wywiadu
 
-### Odpowiedzi
+Rozmowa odbyła się 2026-11-21 i została odegrana w zespole, bo na zajęciach 2 nie było czasu na wywiady z prowadzącym w roli klienta.
 
-| Pytanie | Odpowiedź klienta | Wpływ na dokumentację |
-| ------- | ----------------- | --------------------- |
-|         |                   |                       |
+- Protokół z ustaleniami, liczbami i sprzecznościami: [2026-11-21-wywiad-z-klientem.md](2026-11-21-wywiad-z-klientem.md)
+- Zapis rozmowy: [2026-11-21-wywiad-transkrypcja.md](2026-11-21-wywiad-transkrypcja.md)
 
-### Potwierdzone i odrzucone założenia
-
-| Nr  | Potwierdzone / odrzucone | Uwagi |
-| --- | ------------------------ | ----- |
-|     |                          |       |
-
-### Nowe ustalenia i otwarte sprawy
-
--
-
-### Zadania po wywiadzie
-
--
+Identyfikatory założeń zmieniono z `Z-xx` na `ZAL-xx`, bo `Z-xx` oznacza karty zwrotu akcji w materiałach przedmiotu.
